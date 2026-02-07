@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-inter);
+  background: linear-gradient(135deg, #2d1a2d 0%, #4a1f4a 50%, #2d1a2d 100%);
+  min-height: 100vh;
+  color: #FFB6D9;
+}
+
+@layer components {
+
+  /* Glassmorphism effect - Enhanced */
+  .glass {
+    background: rgba(255, 182, 217, 0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 110, 199, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(255, 110, 199, 0.2);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .glass {
+      background: rgba(255, 182, 217, 0.1);
+      border-color: rgba(255, 110, 199, 0.4);
+    }
+  }
+
+  .glass-card {
+    background: rgba(74, 31, 74, 0.5);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 110, 199, 0.3);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(255, 110, 199, 0.3);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .glass-card {
+      background: rgba(74, 31, 74, 0.6);
+      border-color: rgba(255, 110, 199, 0.4);
+    }
+  }
+
+  /* Gradient text - Pink to Light Pink */
+  .gradient-text {
+    background-image: linear-gradient(135deg, #FF6EC7 0%, #FFB6D9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  /* Card with hover effect */
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(255, 110, 199, 0.5);
+  }
+
+  /* Animated gradient background */
+  .animated-gradient {
+    background: linear-gradient(-45deg,
+        #FF6EC7,
+        #FFB6D9,
+        #FF8ED4,
+        #FFA6E0);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Floating gradient orbs */
+  .gradient-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.6;
+    animation: float-orb 20s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  @keyframes float-orb {
+
+    0%,
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+
+    33% {
+      transform: translate(30px, -30px) scale(1.1);
+    }
+
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+  }
+
+  /* Feature card dark */
+  .feature-card {
+    background: rgba(74, 31, 74, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 110, 199, 0.3);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+  }
+
+  .feature-card:hover {
+    border-color: rgba(255, 110, 199, 0.7);
+    box-shadow: 0 0 30px rgba(255, 110, 199, 0.4);
+    transform: translateY(-5px);
+  }
+
+  /* Scrollbar styling */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 9999px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(135deg, #FF6EC7 0%, #B794F6 50%, #60D5FF 100%);
+    border-radius: 9999px;
+  }
+
+  /* Loading skeleton */
+  .skeleton {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+  }
+
+  @keyframes pulse {
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  /* Fade in animation for tab content */
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Float animation */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+}
