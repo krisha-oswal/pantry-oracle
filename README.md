@@ -1,17 +1,17 @@
-# 🍳 Pantry Oracle - AI-Powered Recipe Discovery
+#  Pantry Oracle - AI-Powered Recipe Discovery
 
 Your intelligent cooking assistant that finds perfect recipes based on what's in your pantry.
 
-## ✨ Features
+##  Features
 
-- **🔍 Smart Recipe Search** - Find recipes based on available ingredients
-- **📸 OCR Ingredient Scanning** - Upload photos of ingredients for automatic detection
-- **✍️ Manual Input** - Type in your ingredients with autocomplete suggestions
-- **📊 Analytics Dashboard** - Track usage metrics and performance
-- **🎨 Beautiful UI** - Modern, responsive design with smooth animations
-- **🌶️ Dietary Filters** - Support for vegetarian, vegan, and gluten-free options
+- ** Smart Recipe Search** - Find recipes based on available ingredients
+- ** OCR Ingredient Scanning** - Upload photos of ingredients for automatic detection
+- ** Manual Input** - Type in your ingredients with autocomplete suggestions
+- ** Analytics Dashboard** - Track usage metrics and performance
+- ** Beautiful UI** - Modern, responsive design with smooth animations
+- ** Dietary Filters** - Support for vegetarian, vegan, and gluten-free options
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -114,7 +114,7 @@ See `.env.example` files in each directory for complete configuration options.
 - **OCR**: Tesseract, pytesseract
 - **Deployment**: Railway/Render
 
-## 📊 API Endpoints
+## API Endpoints
 
 ### Recipes
 - `POST /api/recipes/search` - Search recipes by ingredients
@@ -132,7 +132,7 @@ See `.env.example` files in each directory for complete configuration options.
 ### Health
 - `GET /health` - Health check endpoint
 
-## 🧪 Testing
+##  Testing
 
 ### Frontend
 ```bash
@@ -148,7 +148,7 @@ python -m pytest tests/  # When tests are available
 flake8 .  # Lint Python code
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -156,20 +156,11 @@ flake8 .  # Lint Python code
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Recipe data from [Food.com](https://www.food.com/)
 - Icons from [Lucide](https://lucide.dev/)
 - UI inspiration from modern cooking apps
 
-## 📧 Contact
-
-For questions or support, please open an issue on GitHub.
-
----
-
-Made with ❤️ and 🍳 by the Pantry Oracle team
