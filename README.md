@@ -4,12 +4,12 @@ Your intelligent cooking assistant that finds perfect recipes based on what's in
 
 ##  Features
 
-- ** Smart Recipe Search** - Find recipes based on available ingredients
-- ** OCR Ingredient Scanning** - Upload photos of ingredients for automatic detection
-- ** Manual Input** - Type in your ingredients with autocomplete suggestions
-- ** Analytics Dashboard** - Track usage metrics and performance
-- ** Beautiful UI** - Modern, responsive design with smooth animations
-- ** Dietary Filters** - Support for vegetarian, vegan, and gluten-free options
+- **Smart Recipe Search** - Find recipes based on available ingredients
+- **OCR Ingredient Scanning** - Upload photos of ingredients for automatic detection
+- **Manual Input** - Type in your ingredients with autocomplete suggestions
+- **Analytics Dashboard** - Track usage metrics and performance
+- **Beautiful UI** - Modern, responsive design with smooth animations
+- **Dietary Filters** - Support for vegetarian, vegan, and gluten-free options
 
 ##  Quick Start
 
